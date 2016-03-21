@@ -1,13 +1,33 @@
 $(document).ready(function () {
+
+
 	$("#continue").click(function  () {
 		$("#under-maintance").css("display", "none");
 	});
+
+	function removeActive () {
+		$(".aLinks").data("data-active" , 0).attr("data-active" , 0);
+	};
+
 	//Kilograms to grams
-	$("#kgToG").click(function (event) {
+	$(".aLinks").click(function (event) {
 		event.preventDefault();
-		$(".aLinks").data("data-active" , 0);
-		$(this).data("data-active" , 1);
-		$("#frameLoad").load("kgvgram.html");
+		$(".aLinks").parent().attr("class", "non-active");
+
+		removeActive();
+		$(this).data("data-active" , 1).attr("data-active" , 1);
+		$(this).parent().addClass("active");
+
+		//for (i = 0; i <= $(".aLinks").length; i++) {
+			// var getActiveAttr = $(".aLinks").attr("data-active");
+			// console.log(getActiveAttr);
+			// if (getActiveAttr === 1) {
+			// 	$(this).parent().addClass("active")
+			// } else {
+			// 	$(".aLinks").removeClass("active");
+		//}
 
 	});
+
+
 });
