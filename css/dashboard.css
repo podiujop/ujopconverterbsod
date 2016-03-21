@@ -104,3 +104,9 @@ body {
   border-radius: 50%;
 }
 
+#loading {
+  display: none;
+  width: 24px;
+  height: 24px;
+  background: url(../img/ajax-loader.gif);
+}
