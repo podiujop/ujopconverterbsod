@@ -1,4 +1,7 @@
 $(document).ready(function () {
+	$("#continue").click(function  () {
+		$("#under-maintance").css("display", "none");
+	});
 	//Kilograms to grams
 	$("#kgToG").click(function (event) {
 		event.preventDefault();

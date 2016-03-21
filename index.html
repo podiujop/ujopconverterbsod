@@ -26,10 +26,35 @@
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+
+		<style>
+			#under-maintance {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.71);
+				color: #fff;
+				z-index: 99999;
+				text-align: center;
+				padding-top: 5em;
+				font-size: 3em;
+			}
+
+			#continue {
+				
+			}
+		</style>
 	</head>
 
 	<body>
+		<div id="under-maintance">
+			<p>This site is under maintance</p>
+			<p>You can still use it but it doesn't work properly</p>
+			<p>To continue click this button <button id="continue" value="Continue">continue</button></p>
 
+		</div>
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
