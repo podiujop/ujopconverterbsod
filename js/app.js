@@ -17,8 +17,16 @@ $(document).ready(function () {
 		$(this).parent().addClass("active");
 	});
 
-	$("#kgToG").click(function () {$("#frameLoad").load("kgtogram.html");});
-	$("#kgToMg").click(function () {$("#frameLoad").load("kgtomilligrams.html");});
-	$("#kgToTon").click(function () {$("#frameLoad").load("kgtotons.html");});
-	$("#kgToN").click(function () {$("#frameLoad").load("kgtonewton.html");});
+	$("#kgToG").click(function () {
+		$("#frameLoad").empty();
+		$("#frameLoad").load("kgtogram.html");});
+	$("#kgToMg").click(function () {
+		$("#frameLoad").empty();
+		$("#frameLoad").load("kgtomilligrams.html");});
+	$("#kgToTon").click(function () {
+		$("#frameLoad").empty();
+		$("#frameLoad").load("kgtotons.html");});
+	$("#kgToN").click(function () {
+		$("#frameLoad").empty();
+		$("#frameLoad").load("kgtonewton.html");});
 });
